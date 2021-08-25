@@ -1,0 +1,23 @@
+<view class="cates">
+  <!-- 搜索框 -->
+  <searchInput></searchInput>
+  
+  <view class="cates_container">
+    <!-- 左侧菜单 -->
+    <scroll-view scroll-y="true" class="left_menu">
+      <view>新品上市</view>
+      <view>N族|逆龄抗衰</view>
+      <view>K族|抗油祛痘</view>
+      <view>D族|淡斑美白</view>
+      <view>M族|敏感维护</view>
+      <view>B族|保湿滋润</view>
+    </scroll-view>
+    <!-- 右侧菜单 -->
+    <scroll-view scroll-y="true" class="right_menu">
+      <view>1</view>
+      <view>2</view>
+      <view>3</view>
+    </scroll-view>
+  </view>
+
+</view>
