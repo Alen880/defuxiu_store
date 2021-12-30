@@ -1,0 +1,116 @@
+/* pages/goods_datail/index.wxss */
+
+page{
+	padding-bottom: 120rpx;
+}
+.whole_page{
+	background-color: #f5f5f5;
+}
+.detail_swiper swiper{
+	width: 100%;
+	height: 100vw;
+}
+.detail_swiper swiper swiper-item image{
+	width: 100%;
+	height: 100vw;
+}
+.goods_price{
+	margin-top: 20rpx;
+	margin-left: 30rpx;
+	font-size: 35rpx;
+	color: red;
+}
+.goods_name{
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	font-size: 35rpx;
+	font-weight: bold;
+	/* 第二行多余的字显示... */
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.select_item{
+	margin-top: 40rpx;
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	background-color: white;
+	border-radius: 30rpx;
+	height: 80rpx;
+	display: flex;
+	align-items: center;
+}
+.select_item .select{
+	margin-left: 40rpx;
+}
+.select_item .select_obj{
+	margin-left: 40rpx;
+	font-weight: bold;
+}
+.xq_photo{
+	margin-top: 50rpx;
+}
+.xq_photo .img_group image{
+	display: block;
+	width: 100%;
+	height: 100vw;
+}
+.btm_tool {
+	/* border-top: 1rpx solid #ccc; */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 120rpx;
+	background-color: white;
+	display: flex;
+}
+.btm_tool .tool_item{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 24rpx;
+}
+.btm_tool .tool_item .gouwuche_item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 200rpx;
+}
+.btm_tool .btn_cart{
+	flex: 1;		
+}
+.btm_tool .btn_cart .cart_bg{
+	width: 100%;
+	height: 60%;
+	border-radius: 30rpx 0 0 30rpx;
+	background-color: #1BA4F0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 30rpx;
+	font-weight: 600;
+}
+.btm_tool .btn_buy{
+	flex: 1;
+}
+.btm_tool .btn_buy .buy_bg{
+	width: 100%;
+	height: 60%;
+	border-radius: 0 30rpx 30rpx 0;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 30rpx;
+	font-weight: 600;
+}

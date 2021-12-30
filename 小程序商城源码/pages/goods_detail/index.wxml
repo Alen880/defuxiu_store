@@ -1,0 +1,54 @@
+<!--pages/goods_datail/index.wxml-->
+<view class="whole_page">
+	<view class="detail_swiper">
+		<swiper autoplay="true" circular="true" indicator-dots="true">
+			<swiper-item 
+			wx:for="{{goodsObj.zs_photo}}" 
+			wx:key="pic_id">
+				<image mode="widthFix" src="{{item.mid_pic}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<view class="goods_price">
+		<text space="nbsp">¥ {{goodsObj.price}}</text>	
+	</view>
+
+	<view class="goods_name">
+		<text space="nbsp">
+			{{goodsObj.name}}  {{goodsObj.name_detail}}
+		</text>
+	</view>
+
+	<view class="select_item">
+		<text class="select">服务</text>
+		<text class="select_obj" space="nbsp">售后客服咨询</text>
+	</view>
+
+	<view class="xq_photo">
+		<view class="img_group" 
+		wx:for="{{goodsObj.xq_photo}}"
+		wx:key="pic_id">
+			<image mode="widthFix" src="{{item.big_pic}}"></image>
+		</view>
+	</view>
+
+	<view class="btm_tool">
+		<view class="tool_item">
+			<navigator open-type="switchTab" url="../cart/index" class="gouwuche_item">
+				<view class="iconfont icon-gouwuche"></view>
+				<view>购物车</view>
+			</navigator>	
+		</view>
+		<view class="tool_item btn_cart">
+			<view class="cart_bg">
+				<view>加入购物车</view>
+			</view>			
+		</view>
+		<view class="tool_item btn_buy">
+			<view class="buy_bg">
+				<view>立即购买</view>
+			</view>
+		</view>
+	</view>
+</view>
